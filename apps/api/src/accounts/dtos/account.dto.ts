@@ -1,4 +1,4 @@
-import { AccountStatus } from '@hackathon/type';
+import { AccountStatus } from '@hackathon-qrmenu/type';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class AccountDto {

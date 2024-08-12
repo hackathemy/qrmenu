@@ -1,5 +1,5 @@
 import { QuillViewer } from "@/components/quill-viewer";
-import { Menu } from "@hackathon/type";
+import { Menu } from "@hackathon-qrmenu/type";
 
 export const Description = ({ menu }: { menu: Menu }) => {
   return (

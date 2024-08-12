@@ -7,10 +7,10 @@ import {
   getLangCodeLabel,
   getUnitLabel,
 } from "@/utils";
-import { Currency, LangCode, Unit } from "@hackathon/type";
+import { Currency, LangCode, Unit } from "@hackathon-qrmenu/type";
 import { useRate } from "@/hooks/use-rate";
 import { useForm } from "react-hook-form";
-import { useSettingStore } from "@hackathon/store";
+import { useSettingStore } from "@hackathon-qrmenu/store";
 import { useTranslation } from "react-i18next";
 
 const IMAGE_MAP = {

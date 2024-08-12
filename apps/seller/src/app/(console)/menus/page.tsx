@@ -7,7 +7,7 @@ import { Select } from "@/components/select";
 import { SmallBorderButton } from "@/components/small-border-button";
 import { useCategories } from "@/hooks/use-categories";
 import { useLang } from "@/hooks/use-lang";
-import { LangCode } from "@hackathon/type";
+import { LangCode } from "@hackathon-qrmenu/type";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { stringify } from "querystring";

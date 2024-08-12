@@ -1,8 +1,8 @@
 import { Button } from "@/components/button";
 import { MenuItem } from "@/components/menu-item";
 import { useLang } from "@/hooks/use-lang";
-import { apiClient } from "@hackathon/api-client";
-import { Category, Menu } from "@hackathon/type";
+import { apiClient } from "@hackathon-qrmenu/api-client";
+import { Category, Menu } from "@hackathon-qrmenu/type";
 import { useParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import useSWR from "swr";

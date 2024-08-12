@@ -1,6 +1,6 @@
 "use client";
 
-import { LangCode } from "@hackathon/type";
+import { LangCode } from "@hackathon-qrmenu/type";
 import { useSearchParams } from "next/navigation";
 
 export function useLang() {

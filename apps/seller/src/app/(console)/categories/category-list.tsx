@@ -1,11 +1,11 @@
 import { CategoryItem } from "@/components/category-item";
 import { useLang } from "@/hooks/use-lang";
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AddButton } from "./add-button";
 import { SmallBorderButton } from "@/components/small-border-button";
 import { UpdateButton } from "./update-button";
-import { Category, LangCode } from "@hackathon/type";
+import { Category, LangCode } from "@hackathon-qrmenu/type";
 import { useCategories } from "@/hooks/use-categories";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { stringify } from "querystring";

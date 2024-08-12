@@ -8,13 +8,13 @@ import { Page } from "@/components/page";
 import { ProductPrice } from "@/components/product-price";
 import { ReceiptPopup } from "@/components/receipt-popup";
 import { useLang } from "@/hooks/use-lang";
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import {
   CartItem as CartItemT,
   useCartStore,
   useViewSellerStore,
-} from "@hackathon/store";
-import { Menu } from "@hackathon/type";
+} from "@hackathon-qrmenu/store";
+import { Menu } from "@hackathon-qrmenu/type";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";

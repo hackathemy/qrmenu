@@ -1,5 +1,5 @@
 {
-  "name": "@hackathon/seller",
+  "name": "@hackathon-qrmenu/seller",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hackathon/api-client": "workspace:^0.0.0",
-    "@hackathon/store": "workspace:^0.0.0",
+    "@hackathon-qrmenu/api-client": "workspace:^0.0.0",
+    "@hackathon-qrmenu/store": "workspace:^0.0.0",
     "@toast-ui/react-editor": "^3.2.3",
     "axios": "^1.6.0",
     "dayjs": "^1.11.10",
@@ -38,9 +38,9 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
-    "@hackathon/eslint-config": "workspace:*",
-    "@hackathon/tsconfig": "workspace:*",
-    "@hackathon/type": "workspace:*",
+    "@hackathon-qrmenu/eslint-config": "workspace:*",
+    "@hackathon-qrmenu/tsconfig": "workspace:*",
+    "@hackathon-qrmenu/type": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

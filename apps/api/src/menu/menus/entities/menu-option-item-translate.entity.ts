@@ -5,7 +5,7 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { LangCode } from '@hackathon/type';
+import { LangCode } from '@hackathon-qrmenu/type';
 import { MenuOptionItem } from './menu-option-item.entity';
 
 @Entity()

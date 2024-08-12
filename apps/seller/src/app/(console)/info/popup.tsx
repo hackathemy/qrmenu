@@ -9,7 +9,7 @@ import { Select } from "@/components/select";
 import { SmallBorderButton } from "@/components/small-border-button";
 import { TimeManage } from "@/components/time-manage";
 import { getOpenTimeLabel, openTimeToObject, openTimeToString } from "@/utils";
-import { OpenTimeObject, OpenTimeType } from "@hackathon/type";
+import { OpenTimeObject, OpenTimeType } from "@hackathon-qrmenu/type";
 import { Editor } from "@toast-ui/react-editor";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";

@@ -10,9 +10,9 @@ import { Select } from "@/components/select";
 import { Tooltip } from "@/components/tooltip";
 import { useFileUpload } from "@/hooks/use-file-upload";
 import { getSellerTypeLabel } from "@/utils";
-import { ApiError, apiClient } from "@hackathon/api-client";
-import { useSellerStore } from "@hackathon/store";
-import { SellerType } from "@hackathon/type";
+import { ApiError, apiClient } from "@hackathon-qrmenu/api-client";
+import { useSellerStore } from "@hackathon-qrmenu/store";
+import { SellerType } from "@hackathon-qrmenu/type";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 

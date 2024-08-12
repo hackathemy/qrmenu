@@ -1,7 +1,7 @@
 "use client";
 
-import { useSettingStore } from "@hackathon/store";
-import { LangCode } from "@hackathon/type";
+import { useSettingStore } from "@hackathon-qrmenu/store";
+import { LangCode } from "@hackathon-qrmenu/type";
 import { useSearchParams } from "next/navigation";
 
 export function useLang() {

@@ -4,7 +4,7 @@ import {
   ApiPropertyUpdateMask,
 } from 'src/common/internal/decorators/api-property.decorator';
 import { MenuDto } from './menu.dto';
-import { LangCode } from '@hackathon/type';
+import { LangCode } from '@hackathon-qrmenu/type';
 
 export class PatchMenuRequestParamDto {
   @ApiProperty()

@@ -10,7 +10,7 @@ import {
 } from "./badge";
 import { ProductPrice } from "./product-price";
 import { ProductInfo } from "./product-info";
-import { Menu, MenuBadge } from "@hackathon/type";
+import { Menu, MenuBadge } from "@hackathon-qrmenu/type";
 import { getCDNUrl } from "@/utils";
 import { useTranslation } from "react-i18next";
 import { useCart } from "@/hooks/use-cart";

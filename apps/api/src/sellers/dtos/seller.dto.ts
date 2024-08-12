@@ -9,7 +9,7 @@ import {
   Seller,
   SellerType,
   UsageGuide,
-} from '@hackathon/type';
+} from '@hackathon-qrmenu/type';
 
 export class JoinAccountDto implements JoinAccount {
   @ApiProperty()

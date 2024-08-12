@@ -1,4 +1,4 @@
-import { LangCode, MenuUnit } from '@hackathon/type';
+import { LangCode, MenuUnit } from '@hackathon-qrmenu/type';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateMenuOptionItem {

@@ -1,4 +1,4 @@
-import { useSettingStore } from "@hackathon/store";
+import { useSettingStore } from "@hackathon-qrmenu/store";
 
 export function useUnit() {
   return useSettingStore((s) => s.unit);

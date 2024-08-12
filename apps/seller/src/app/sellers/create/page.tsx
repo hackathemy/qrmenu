@@ -2,7 +2,7 @@
 
 import { AuthForm } from "@/components/auth-form";
 import { Step } from "@/components/step";
-import { useSellerStore } from "@hackathon/store";
+import { useSellerStore } from "@hackathon-qrmenu/store";
 import { useRouter } from "next/navigation";
 
 export default function SellersCreate() {

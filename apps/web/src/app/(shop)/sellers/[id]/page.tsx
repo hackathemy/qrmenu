@@ -10,19 +10,19 @@ import { Pay } from "@/components/pay";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import {
   AccountStatus,
   LangCode,
   Seller,
   SellerTranslateDto,
-} from "@hackathon/type";
+} from "@hackathon-qrmenu/type";
 import { useLang } from "@/hooks/use-lang";
 import { QuillViewer } from "@/components/quill-viewer";
 import { Time } from "./time";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import { useViewSellerStore } from "@hackathon/store";
+import { useViewSellerStore } from "@hackathon-qrmenu/store";
 
 export default function Seller() {
   const searchParams = useSearchParams();

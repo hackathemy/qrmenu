@@ -1,4 +1,4 @@
-import { TokenPayload } from '@hackathon/type';
+import { TokenPayload } from '@hackathon-qrmenu/type';
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { JwtService } from '@nestjs/jwt';

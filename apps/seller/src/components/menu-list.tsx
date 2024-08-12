@@ -1,11 +1,11 @@
-import { useSellerStore } from "@hackathon/store";
+import { useSellerStore } from "@hackathon-qrmenu/store";
 import { MenuItem } from "./menu-item";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLang } from "@/hooks/use-lang";
 import { getCDNUrl, useDefaultQueryParams } from "@/utils";
 import uswSWR, { useSWRConfig } from "swr";
-import { LangCode, Menu } from "@hackathon/type";
-import { apiClient } from "@hackathon/api-client";
+import { LangCode, Menu } from "@hackathon-qrmenu/type";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import { Pagination } from "./pagination";
 import { useParamsWithPagination } from "@/hooks/use-params-with-pagination";
 import {

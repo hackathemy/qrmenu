@@ -1,8 +1,8 @@
 "use client";
 
 import { AuthForm } from "@/components/auth-form";
-import { ApiError, apiClient } from "@hackathon/api-client";
-import { useAccountStore, useSellerStore } from "@hackathon/store";
+import { ApiError, apiClient } from "@hackathon-qrmenu/api-client";
+import { useAccountStore, useSellerStore } from "@hackathon-qrmenu/store";
 import { HttpStatusCode } from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";

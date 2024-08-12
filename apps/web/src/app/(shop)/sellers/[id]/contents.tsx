@@ -1,7 +1,7 @@
 import { Content } from "@/components/content";
 import { useLang } from "@/hooks/use-lang";
-import { apiClient } from "@hackathon/api-client";
-import { Content as ContentT } from "@hackathon/type";
+import { apiClient } from "@hackathon-qrmenu/api-client";
+import { Content as ContentT } from "@hackathon-qrmenu/type";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { useTranslation } from "react-i18next";

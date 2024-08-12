@@ -1,4 +1,4 @@
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import { useCallback } from "react";
 
 export function useFileUpload() {

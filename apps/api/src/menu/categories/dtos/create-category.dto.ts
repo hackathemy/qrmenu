@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { ApiPropertyResource } from 'src/common/internal/decorators/api-property.decorator';
 import { CategoryDto } from './category.dto';
-import { LangCode } from '@hackathon/type';
+import { LangCode } from '@hackathon-qrmenu/type';
 
 export class CreateCategoryRequestBodyDto {
   @ApiProperty()

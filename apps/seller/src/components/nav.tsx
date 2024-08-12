@@ -1,8 +1,8 @@
 "use client";
 
-import { apiClient } from "@hackathon/api-client";
-import { useAccountStore, useSellerStore } from "@hackathon/store";
-import { AccountStatus, LangCode, SellerTranslateDto } from "@hackathon/type";
+import { apiClient } from "@hackathon-qrmenu/api-client";
+import { useAccountStore, useSellerStore } from "@hackathon-qrmenu/store";
+import { AccountStatus, LangCode, SellerTranslateDto } from "@hackathon-qrmenu/type";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";

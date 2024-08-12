@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { Checkbox } from "./checkbox";
 import { Select } from "./select";
-import { OpenTime, OpenTimeObject } from "@hackathon/type";
+import { OpenTime, OpenTimeObject } from "@hackathon-qrmenu/type";
 
 const options = Object.values(OpenTime).map((x) => ({ label: x, value: x }));
 export const TimeManage = ({

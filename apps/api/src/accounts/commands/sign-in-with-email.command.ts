@@ -10,7 +10,7 @@ import { compare } from 'bcrypt';
 import { throwError } from 'src/common/error';
 import { AccountsError } from '../accounts.error';
 import { TokenService } from '../services/token.service';
-import { AccountStatus, Role } from '@hackathon/type';
+import { AccountStatus, Role } from '@hackathon-qrmenu/type';
 
 export class SignInWithEmailCommand {
   constructor(public request: SignInWithEmailRequestBodyDto) {}

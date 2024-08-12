@@ -7,7 +7,7 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { MenuOptionGroup } from './menu-option-group.entity';
-import { MenuUnit } from '@hackathon/type';
+import { MenuUnit } from '@hackathon-qrmenu/type';
 import { MenuOptionItemTranslate } from './menu-option-item-translate.entity';
 
 @Entity()

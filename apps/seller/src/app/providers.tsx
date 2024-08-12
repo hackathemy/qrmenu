@@ -7,13 +7,13 @@ import {
   apiClient,
   setBaseUrl,
   setBearerAuthorization,
-} from "@hackathon/api-client";
-import { TokenPayload } from "@hackathon/type";
+} from "@hackathon-qrmenu/api-client";
+import { TokenPayload } from "@hackathon-qrmenu/type";
 import {
   useAccountStore,
   useSellerStore,
   useSessionStore,
-} from "@hackathon/store";
+} from "@hackathon-qrmenu/store";
 import { usePathname, useRouter } from "next/navigation";
 import { HttpStatusCode } from "axios";
 setBaseUrl(process.env.NEXT_PUBLIC_API_URL as string);

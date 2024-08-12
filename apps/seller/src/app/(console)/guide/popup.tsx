@@ -9,7 +9,7 @@ import {
   PaymentCardType,
   PaymentCashType,
   PaymentSmartPayType,
-} from "@hackathon/type";
+} from "@hackathon-qrmenu/type";
 import { Editor } from "@toast-ui/react-editor";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";

@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { ContentMenuDto } from './content.dto';
-import { LangCode } from '@hackathon/type';
+import { LangCode } from '@hackathon-qrmenu/type';
 
 export class ListMenusRequestParamDto {
   @ApiProperty()

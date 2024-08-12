@@ -1,7 +1,7 @@
-import { ApiError, apiClient, setBaseUrl } from "@hackathon/api-client";
+import { ApiError, apiClient, setBaseUrl } from "@hackathon-qrmenu/api-client";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
-import { Role } from "@hackathon/type";
+import { Role } from "@hackathon-qrmenu/type";
 
 setBaseUrl(process.env.NEXT_PUBLIC_API_URL as string);
 

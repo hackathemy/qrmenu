@@ -9,9 +9,9 @@ import { Row, RowGrid } from "@/components/row";
 import { SmallBorderButton } from "@/components/small-border-button";
 import { useLang } from "@/hooks/use-lang";
 import { formatPhoneNumber, wrapError } from "@/utils";
-import { apiClient } from "@hackathon/api-client";
-import { useLangPopupStore, useSellerStore } from "@hackathon/store";
-import { Seller, SellerTranslateDto } from "@hackathon/type";
+import { apiClient } from "@hackathon-qrmenu/api-client";
+import { useLangPopupStore, useSellerStore } from "@hackathon-qrmenu/store";
+import { Seller, SellerTranslateDto } from "@hackathon-qrmenu/type";
 import { HttpStatusCode } from "axios";
 import { useEffect, useState } from "react";
 import {

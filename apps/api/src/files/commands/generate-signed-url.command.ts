@@ -1,4 +1,4 @@
-import { RequestUser } from '@hackathon/type';
+import { RequestUser } from '@hackathon-qrmenu/type';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import {
   GenerateSignedUrlRequestBodyDto,

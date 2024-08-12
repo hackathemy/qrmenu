@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { ContentDto } from './content.dto';
-import { LangCode } from '@hackathon/type';
+import { LangCode } from '@hackathon-qrmenu/type';
 
 export class GetContentsequestParamDto {
   @ApiProperty()

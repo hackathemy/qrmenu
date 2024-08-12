@@ -1,4 +1,4 @@
-import { MenuAllergy, MenuBadge, MenuFoodStyle } from '@hackathon/type';
+import { MenuAllergy, MenuBadge, MenuFoodStyle } from '@hackathon-qrmenu/type';
 import {
   Column,
   CreateDateColumn,

@@ -14,7 +14,7 @@ import {
   PaymentSmartPayType,
   SellerType,
   UsageGuide,
-} from '@hackathon/type';
+} from '@hackathon-qrmenu/type';
 
 @Entity()
 export class Seller {

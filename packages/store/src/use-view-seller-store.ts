@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Account, Seller } from "@hackathon/type";
+import { Account, Seller } from "@hackathon-qrmenu/type";
 
 interface ViewSellerStore {
   sellerId: null | number;

@@ -1,4 +1,4 @@
-import { Menu, OptionGroup } from "@hackathon/type";
+import { Menu, OptionGroup } from "@hackathon-qrmenu/type";
 import { create } from "zustand";
 
 interface CurStore {

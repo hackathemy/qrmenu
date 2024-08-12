@@ -1,4 +1,4 @@
-import { ApiError, apiClient, setBaseUrl } from "@hackathon/api-client";
+import { ApiError, apiClient, setBaseUrl } from "@hackathon-qrmenu/api-client";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 

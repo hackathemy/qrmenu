@@ -1,4 +1,4 @@
-import { RequestUser } from '@hackathon/type';
+import { RequestUser } from '@hackathon-qrmenu/type';
 import {
   CreateFileRequestBodyDto,
   CreateFileResponseDto,

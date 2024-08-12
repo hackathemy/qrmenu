@@ -23,7 +23,7 @@ import { ProductOptions } from "@/components/product-options";
 import { useParams, useRouter } from "next/navigation";
 import { useLang } from "@/hooks/use-lang";
 import useSWR from "swr";
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import {
   Currency,
   LangCode,
@@ -32,7 +32,7 @@ import {
   MenuFoodStyle,
   OptionGroup,
   Unit,
-} from "@hackathon/type";
+} from "@hackathon-qrmenu/type";
 import { useTranslation } from "react-i18next";
 import { ImageSlider } from "./images";
 import { useRate } from "@/hooks/use-rate";

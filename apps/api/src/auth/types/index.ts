@@ -1,3 +1,3 @@
-import { TokenPayload } from '@hackathon/type';
+import { TokenPayload } from '@hackathon-qrmenu/type';
 
 export type RequestUser = TokenPayload;

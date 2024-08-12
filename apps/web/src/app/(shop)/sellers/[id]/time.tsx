@@ -5,7 +5,7 @@ import Image from "next/image";
 import customParseFormat from "dayjs/plugin/customParseFormat";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { OpenTimeType } from "@hackathon/type";
+import { OpenTimeType } from "@hackathon-qrmenu/type";
 import { Popover } from "react-tiny-popover";
 
 dayjs.extend(customParseFormat);

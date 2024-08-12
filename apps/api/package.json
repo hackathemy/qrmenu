@@ -1,5 +1,5 @@
 {
-  "name": "@hackathon/api",
+  "name": "@hackathon-qrmenu/api",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -28,7 +28,7 @@
     "@aws-sdk/s3-request-presigner": "^3.441.0",
     "@aws-sdk/url-parser": "^3.374.0",
     "@aws-sdk/util-format-url": "^3.433.0",
-    "@hackathon/type": "workspace:^0.1.0",
+    "@hackathon-qrmenu/type": "workspace:^0.1.0",
     "@nestjs-modules/mailer": "^1.9.1",
     "@nestjs/axios": "^3.0.1",
     "@nestjs/common": "^9.0.0",

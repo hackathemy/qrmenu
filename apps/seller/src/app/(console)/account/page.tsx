@@ -7,12 +7,12 @@ import { Popup } from "@/components/popup";
 import { Row, RowGrid } from "@/components/row";
 import { SmallBorderButton } from "@/components/small-border-button";
 import { formatBussinessNumber, formatPhoneNumber } from "@/utils";
-import { useAccountStore, useSellerStore } from "@hackathon/store";
+import { useAccountStore, useSellerStore } from "@hackathon-qrmenu/store";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { PasswordUpdateForm, PhoneUpdateForm } from "./form";
 import { usePatchSeller } from "@/hooks/use-patch-seller";
-import { Seller } from "@hackathon/type";
+import { Seller } from "@hackathon-qrmenu/type";
 
 export default function Account() {
   const [changePassword, setChangePassword] = useState(false);

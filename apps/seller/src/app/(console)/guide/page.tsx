@@ -13,12 +13,12 @@ import {
   UpdateWiFiPopup,
   WiFiForm,
 } from "./popup";
-import { useLangPopupStore, useSellerStore } from "@hackathon/store";
+import { useLangPopupStore, useSellerStore } from "@hackathon-qrmenu/store";
 import { usePatchSeller } from "@/hooks/use-patch-seller";
-import { Seller, SellerTranslateDto, UsageGuide } from "@hackathon/type";
+import { Seller, SellerTranslateDto, UsageGuide } from "@hackathon-qrmenu/type";
 import { QuillViewer } from "@/components/quill-viewer";
 import { useLang } from "@/hooks/use-lang";
-import { apiClient } from "@hackathon/api-client";
+import { apiClient } from "@hackathon-qrmenu/api-client";
 import { HttpStatusCode } from "axios";
 import { wrapError } from "@/utils";
 import { Modified } from "@/components/modified";

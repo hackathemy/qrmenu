@@ -1,10 +1,10 @@
 "use client";
 
-import { useLangPopupStore } from "@hackathon/store";
+import { useLangPopupStore } from "@hackathon-qrmenu/store";
 import { PopupContainer } from "./popup";
 import { Button } from "./button";
 import { useLang } from "@/hooks/use-lang";
-import { LangCode } from "@hackathon/type";
+import { LangCode } from "@hackathon-qrmenu/type";
 import { InputLabel } from "./input-label";
 import { useEffect, useState } from "react";
 

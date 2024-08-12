@@ -1,4 +1,4 @@
-import { RequestUser, Role } from '@hackathon/type';
+import { RequestUser, Role } from '@hackathon-qrmenu/type';
 import {
   PatchAccountRequestBodyDto,
   PatchAccountRequestParamDto,

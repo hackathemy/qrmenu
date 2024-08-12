@@ -4,7 +4,7 @@ importers:
 
   .:
     devDependencies:
-      '@hackathon/tsconfig':
+      '@hackathon-qrmenu/tsconfig':
         specifier: workspace:*
         version: link:packages/tsconfig
       eslint:
@@ -43,7 +43,7 @@ importers:
       '@aws-sdk/util-format-url':
         specifier: ^3.433.0
         version: 3.433.0
-      '@hackathon/type':
+      '@hackathon-qrmenu/type':
         specifier: workspace:^0.1.0
         version: link:../../packages/type
       '@nestjs-modules/mailer':
@@ -212,10 +212,10 @@ importers:
 
   apps/seller:
     dependencies:
-      '@hackathon/api-client':
+      '@hackathon-qrmenu/api-client':
         specifier: workspace:^0.0.0
         version: link:../../packages/api-client
-      '@hackathon/store':
+      '@hackathon-qrmenu/store':
         specifier: workspace:^0.0.0
         version: link:../../packages/store
       '@toast-ui/react-editor':
@@ -294,13 +294,13 @@ importers:
         specifier: ^2.2.4
         version: 2.2.4(react@18.2.0)
     devDependencies:
-      '@hackathon/eslint-config':
+      '@hackathon-qrmenu/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
-      '@hackathon/tsconfig':
+      '@hackathon-qrmenu/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
-      '@hackathon/type':
+      '@hackathon-qrmenu/type':
         specifier: workspace:*
         version: link:../../packages/type
       '@types/node':
@@ -333,10 +333,10 @@ importers:
 
   apps/web:
     dependencies:
-      '@hackathon/api-client':
+      '@hackathon-qrmenu/api-client':
         specifier: workspace:*
         version: link:../../packages/api-client
-      '@hackathon/store':
+      '@hackathon-qrmenu/store':
         specifier: workspace:*
         version: link:../../packages/store
       '@tailwindcss/line-clamp':
@@ -391,13 +391,13 @@ importers:
         specifier: ^2.2.4
         version: 2.2.4(react@18.2.0)
     devDependencies:
-      '@hackathon/eslint-config':
+      '@hackathon-qrmenu/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config-custom
-      '@hackathon/tsconfig':
+      '@hackathon-qrmenu/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
-      '@hackathon/type':
+      '@hackathon-qrmenu/type':
         specifier: workspace:*
         version: link:../../packages/type
       '@next/eslint-plugin-next':
@@ -433,14 +433,14 @@ importers:
 
   packages/api-client:
     dependencies:
-      '@hackathon/store':
+      '@hackathon-qrmenu/store':
         specifier: workspace:*
         version: link:../store
       axios:
         specifier: ^1.5.0
         version: 1.6.0
     devDependencies:
-      '@hackathon/tsconfig':
+      '@hackathon-qrmenu/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
       '@types/node':
@@ -474,10 +474,10 @@ importers:
         specifier: ^4.4.1
         version: 4.4.6(@types/react@18.2.21)(react@18.2.0)
     devDependencies:
-      '@hackathon/tsconfig':
+      '@hackathon-qrmenu/tsconfig':
         specifier: workspace:*
         version: link:../tsconfig
-      '@hackathon/type':
+      '@hackathon-qrmenu/type':
         specifier: workspace:*
         version: link:../type
       '@types/node':

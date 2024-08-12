@@ -8,7 +8,7 @@ import { Seller } from './entities/seller.entity';
 import { Repository } from 'typeorm';
 import { GetSellerByAccountRequestParamDto } from './dtos/get-seller-by-account.dto';
 import { CreateSellerRequestBodyDto } from './dtos/create-seller.dto';
-import { AccountStatus, LangCode, RequestUser } from '@hackathon/type';
+import { AccountStatus, LangCode, RequestUser } from '@hackathon-qrmenu/type';
 import { GetSellerRequestParamDto } from './dtos/get-seller.dto';
 import { Account } from 'src/accounts/entities/account.entity';
 import { File } from 'src/files/entities/file.entity';

@@ -1,4 +1,4 @@
-import { useSessionStore } from "@hackathon/store";
+import { useSessionStore } from "@hackathon-qrmenu/store";
 import axios from "axios";
 
 export const apiClient = axios.create({});

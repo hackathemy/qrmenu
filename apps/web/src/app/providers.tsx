@@ -1,5 +1,5 @@
 "use client";
-import { setBaseUrl } from "@hackathon/api-client";
+import { setBaseUrl } from "@hackathon-qrmenu/api-client";
 import { ReactNode, useEffect } from "react";
 import React from "react";
 import i18n from "i18next";
