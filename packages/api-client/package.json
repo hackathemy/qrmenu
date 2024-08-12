@@ -1,0 +1,18 @@
+{
+  "name": "@hackathon/api-client",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "clean": "rm -rf node_modules && rm -rf dis  && rm -rf .turbo",
+  "scripts": {
+    "clean": "rm -rf node_modules  && rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@hackathon/tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "@hackathon/store": "workspace:*"
+  }
+}

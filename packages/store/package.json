@@ -1,0 +1,22 @@
+{
+  "name": "@hackathon/store",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "clean": "rm -rf node_modules && rm -rf dis  && rm -rf .turbo",
+  "scripts": {
+    "clean": "rm -rf node_modules  && rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.2",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@hackathon/tsconfig": "workspace:*",
+    "@hackathon/type": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "zustand": "^4.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

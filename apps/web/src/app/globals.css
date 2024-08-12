@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: var(---apple-sd-gothic);
+  font-size: 14px;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #000;
+}
+
+@layer components {
+  * {
+    @apply text-[#101010] font-normal;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.viewer-compact {
+}
+
+.viewer-compact p {
+  margin: 0px !important;
+}
