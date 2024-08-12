@@ -20,3 +20,56 @@ pnpm dev --filter @hackathon-qrmenu/web...
 # seller
 pnpm dev --filter @hackathon-qrmenu/seller...
 ```
+
+
+## Env
+
+- `api`
+```bash
+NODE_ENV= 'local' # 'production' | 'development'
+
+PORT=8000
+
+JWT_SECRET=
+
+# PostgreSQL
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_USER=postgres
+DATABASE_PASSWORD=
+DATABASE_NAME=qrmenu
+
+# AWS S3 Credentials
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=
+# 메뉴 등 이미지 저장 버켓
+AWS_S3_BUCKET=
+```
+
+- `seller`
+```bash
+# API URL
+NEXT_PUBLIC_API_URL=
+
+# CDN URL (for contains file path from backend) ex) {S3_BUCKET_PUBLIC_URL}
+NEXT_PUBLIC_CDN_URL=
+
+# Project Self Base URL ex) http://localhost:3001
+NEXT_PUBLIC_BASE_URL=
+
+# Order Web(packages/web) URL (for qrcode scan)
+NEXT_PUBLIC_WEB_URL=
+```
+
+- `web`
+```bash
+# API URL
+NEXT_PUBLIC_API_URL=
+
+# CDN URL (for contains file path from backend) ex) {S3_BUCKET_PUBLIC_URL}
+NEXT_PUBLIC_CDN_URL=
+
+# 한국수출입은행 OPEN AUTH KEY - 환율 적용
+KOREA_EXIM_AUTH_KEY=
+```
