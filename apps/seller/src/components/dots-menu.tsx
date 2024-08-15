@@ -1,4 +1,4 @@
-import { useSellerMenuStore } from "@hackathon-qrmenu/store";
+import { useSellerMenuStore } from "@hackathemy-qrmenu/store";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

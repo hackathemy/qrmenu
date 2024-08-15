@@ -1,4 +1,4 @@
-import { ApiError } from "@hackathon-qrmenu/api-client";
+import { ApiError } from "@hackathemy-qrmenu/api-client";
 import {
   AccountStatus,
   Currency,
@@ -9,7 +9,7 @@ import {
   OpenTimeObject,
   OpenTimeType,
   SellerType,
-} from "@hackathon-qrmenu/type";
+} from "@hackathemy-qrmenu/type";
 import dayjs from "dayjs";
 import { useMemo } from "react";
 

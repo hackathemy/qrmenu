@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { SellerDto } from './seller.dto';
-import { SellerType } from '@hackathon-qrmenu/type';
+import { SellerType } from '@hackathemy-qrmenu/type';
 
 export class CreateSellerRequestBodyDto {
   @ApiProperty()

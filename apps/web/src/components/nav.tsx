@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Settings } from "./settings";
-import { useCartStore } from "@hackathon-qrmenu/store";
+import { useCartStore } from "@hackathemy-qrmenu/store";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 

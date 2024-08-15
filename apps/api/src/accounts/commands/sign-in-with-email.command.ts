@@ -10,7 +10,7 @@ import { compare } from 'bcrypt';
 import { throwError } from 'src/common/error';
 import { AccountsError } from '../accounts.error';
 import { TokenService } from '../services/token.service';
-import { AccountStatus, Role } from '@hackathon-qrmenu/type';
+import { AccountStatus, Role } from '@hackathemy-qrmenu/type';
 
 export class SignInWithEmailCommand {
   constructor(public request: SignInWithEmailRequestBodyDto) {}
@@ -37,10 +37,6 @@ export class SignInWithEmailCommandHandler
 
     if (!account || !(await compare(request.password, account.password))) {
       throwError(AccountsError.FAILED_LOGIN);
-    }
-
-    if (account.status === AccountStatus.REJECTED && !account.roles.includes(Role.ADMIN)) {
-      throwError(AccountsError.REJECTED_STATUS);
     }
 
     return { token: await this.tokenService.generate(account) };

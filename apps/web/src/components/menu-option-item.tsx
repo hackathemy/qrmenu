@@ -4,7 +4,7 @@ import { useCurrency } from "@/hooks/use-currency";
 import { useRate } from "@/hooks/use-rate";
 import { useUnit } from "@/hooks/use-unit";
 import { formatNumber, toImperial } from "@/utils";
-import { Currency, MenuUnit, Unit } from "@hackathon-qrmenu/type";
+import { Currency, MenuUnit, Unit } from "@hackathemy-qrmenu/type";
 import Image from "next/image";
 
 export const MenuOptionItem = ({

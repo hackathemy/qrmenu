@@ -5,7 +5,7 @@ import {
   Entity,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { Role } from '@hackathon-qrmenu/type';
+import { Role } from '@hackathemy-qrmenu/type';
 
 /** 회원 (계정) */
 @Entity()

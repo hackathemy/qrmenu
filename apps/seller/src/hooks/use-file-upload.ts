@@ -1,34 +1,13 @@
-import { apiClient } from "@hackathon-qrmenu/api-client";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
 import { useCallback } from "react";
 
 export function useFileUpload() {
   const handleUpload = useCallback(async (file: File) => {
     try {
-      const { data } = await apiClient.post("/files", {
-        size: file.size,
-        fileName: file.name,
-        contentType: file.type,
-      });
+      const formData = new FormData();
+      formData.append("file", file);
 
-      const {
-        data: { signedUrl },
-      } = await apiClient.post(
-        "/files/" + data.file.id + ":generateSignedUrl",
-        {
-          method: "PUT",
-        }
-      );
-
-      const form = new FormData();
-      form.append("file", file);
-
-      await fetch("/api/upload", {
-        method: "POST",
-        body: form,
-        headers: {
-          "x-signed-url": signedUrl,
-        },
-      });
+      const { data } = await apiClient.post("/files", formData);
 
       return {
         fileId: data.file.id,

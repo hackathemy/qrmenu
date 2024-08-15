@@ -9,15 +9,13 @@ import {
   Seller,
   SellerType,
   UsageGuide,
-} from '@hackathon-qrmenu/type';
+} from '@hackathemy-qrmenu/type';
 
 export class JoinAccountDto implements JoinAccount {
   @ApiProperty()
   email: string;
   @ApiProperty()
   id: number;
-  @ApiProperty()
-  status: AccountStatus;
   @ApiProperty()
   phoneNumber: string;
   @ApiProperty()

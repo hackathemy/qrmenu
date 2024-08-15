@@ -5,10 +5,10 @@ import { BadgeInfluencer, BadgeNew, BadgeThumnbsUp, Badges } from "./badge";
 import { ProductInfo } from "./product-info";
 import { QuantityManage } from "./quantity-manage";
 import { ProductPrice } from "./product-price";
-import { Menu, MenuBadge, Currency, OptionGroup } from "@hackathon-qrmenu/type";
+import { Menu, MenuBadge, Currency, OptionGroup } from "@hackathemy-qrmenu/type";
 import { getCDNUrl, formatNumber } from "@/utils";
 import { useFormContext } from "react-hook-form";
-import { CartItem as CartItemT } from "@hackathon-qrmenu/store";
+import { CartItem as CartItemT } from "@hackathemy-qrmenu/store";
 import { useTranslation } from "react-i18next";
 import { useMemo } from "react";
 export const CartItem = ({

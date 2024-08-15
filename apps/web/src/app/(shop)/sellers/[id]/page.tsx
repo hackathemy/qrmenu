@@ -10,19 +10,19 @@ import { Pay } from "@/components/pay";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
-import { apiClient } from "@hackathon-qrmenu/api-client";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
 import {
   AccountStatus,
   LangCode,
   Seller,
   SellerTranslateDto,
-} from "@hackathon-qrmenu/type";
+} from "@hackathemy-qrmenu/type";
 import { useLang } from "@/hooks/use-lang";
 import { QuillViewer } from "@/components/quill-viewer";
 import { Time } from "./time";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
-import { useViewSellerStore } from "@hackathon-qrmenu/store";
+import { useViewSellerStore } from "@hackathemy-qrmenu/store";
 
 export default function Seller() {
   const searchParams = useSearchParams();
@@ -76,11 +76,7 @@ export default function Seller() {
 
   useEffect(() => {
     if (process.current) return;
-    if (
-      querySeller.data &&
-      (!querySeller.data.data.seller.visible ||
-        querySeller.data.data.seller.account.status !== AccountStatus.ACTIVE)
-    ) {
+    if (querySeller.data && !querySeller.data.data.seller.visible) {
       process.current = true;
       alert(t("invisible-seller"));
       router.replace("/");

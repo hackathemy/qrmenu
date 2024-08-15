@@ -1,4 +1,4 @@
-import { Currency, LangCode, Unit } from "@hackathon-qrmenu/type";
+import { Currency, LangCode, Unit } from "@hackathemy-qrmenu/type";
 import { create } from "zustand";
 
 interface SettingStore {

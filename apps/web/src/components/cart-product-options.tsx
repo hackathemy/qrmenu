@@ -6,7 +6,7 @@ import { useFieldArray, useFormContext } from "react-hook-form";
 import { MenuOptionMultiple } from "./menu-option-multiple";
 import { MenuOptionMultipleItem } from "./menu-option-multiple-item";
 import { QuantityManage } from "./quantity-manage";
-import { CartItem } from "@hackathon-qrmenu/store";
+import { CartItem } from "@hackathemy-qrmenu/store";
 
 export const CartProductOptions = ({index}:{index:number}) => {
   const form = useFormContext<CartItem>();

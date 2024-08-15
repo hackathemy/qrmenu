@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useCurrency } from "@/hooks/use-currency";
 import { useRate } from "@/hooks/use-rate";
-import { Currency, MenuUnit, Unit } from "@hackathon-qrmenu/type";
+import { Currency, MenuUnit, Unit } from "@hackathemy-qrmenu/type";
 import { formatNumber, toImperial } from "@/utils";
 import { ReactNode } from "react";
 import { useUnit } from "@/hooks/use-unit";

@@ -1,4 +1,4 @@
-import { Role, TokenPayload } from '@hackathon-qrmenu/type';
+import { Role, TokenPayload } from '@hackathemy-qrmenu/type';
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { QueryBus } from '@nestjs/cqrs';

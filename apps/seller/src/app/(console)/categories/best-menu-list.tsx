@@ -6,7 +6,7 @@ import { useCategories } from "@/hooks/use-categories";
 import { useLang } from "@/hooks/use-lang";
 import { useSearchParams } from "next/navigation";
 import { useMemo } from "react";
-import { LangCode } from "@hackathon-qrmenu/type";
+import { LangCode } from "@hackathemy-qrmenu/type";
 
 export const BestMenuList = () => {
   const langCode = useLang();

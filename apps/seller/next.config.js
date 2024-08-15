@@ -2,9 +2,9 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: false,
   transpilePackages: [
-    "@hackathon-qrmenu/type",
-    "@hackathon-qrmenu/api-client",
-    "@hackathon-qrmenu/store",
+    "@hackathemy-qrmenu/type",
+    "@hackathemy-qrmenu/api-client",
+    "@hackathemy-qrmenu/store",
   ],
   typescript: {
     // !! WARN !!

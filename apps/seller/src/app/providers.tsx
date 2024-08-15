@@ -7,13 +7,13 @@ import {
   apiClient,
   setBaseUrl,
   setBearerAuthorization,
-} from "@hackathon-qrmenu/api-client";
-import { TokenPayload } from "@hackathon-qrmenu/type";
+} from "@hackathemy-qrmenu/api-client";
+import { TokenPayload } from "@hackathemy-qrmenu/type";
 import {
   useAccountStore,
   useSellerStore,
   useSessionStore,
-} from "@hackathon-qrmenu/store";
+} from "@hackathemy-qrmenu/store";
 import { usePathname, useRouter } from "next/navigation";
 import { HttpStatusCode } from "axios";
 setBaseUrl(process.env.NEXT_PUBLIC_API_URL as string);
@@ -40,6 +40,7 @@ export default function Providers({
   const pathname = usePathname();
   const router = useRouter();
 
+  console.log(account)
   useEffect(() => {
     if (account) {
       if (!account.phoneNumber && !pathname.startsWith("/sellers/create")) {

@@ -8,9 +8,9 @@ import { SmallBorderButton } from "@/components/small-border-button";
 import { Switch } from "@/components/switch";
 import { usePatchSeller } from "@/hooks/use-patch-seller";
 import { formatPhoneNumber } from "@/utils";
-import { apiClient } from "@hackathon-qrmenu/api-client";
-import { useAccountStore, useSellerStore } from "@hackathon-qrmenu/store";
-import { LangCode, Seller, SellerTranslateDto } from "@hackathon-qrmenu/type";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
+import { useAccountStore, useSellerStore } from "@hackathemy-qrmenu/store";
+import { LangCode, Seller, SellerTranslateDto } from "@hackathemy-qrmenu/type";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 

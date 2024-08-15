@@ -1,5 +1,5 @@
 import { formatDate, getCDNUrl } from "@/utils";
-import { Content as ContentT } from "@hackathon-qrmenu/type";
+import { Content as ContentT } from "@hackathemy-qrmenu/type";
 import Image from "next/image";
 import Link from "next/link";
 

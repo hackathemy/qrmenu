@@ -13,6 +13,8 @@ async function bootstrap() {
 
   app.enableCors();
 
+  app.useStaticAssets(join(__dirname, '..', 'upload'), { prefix: '/upload/' });
+
   /** Bad request error middleware */
   app.useGlobalPipes(
     new ValidationPipe({

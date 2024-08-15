@@ -1,6 +1,6 @@
 "use client";
 
-import { CartItem } from "@hackathon-qrmenu/store";
+import { CartItem } from "@hackathemy-qrmenu/store";
 import { Button } from "./button";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";

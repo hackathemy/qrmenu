@@ -1,6 +1,6 @@
 "use client";
 
-import { useSettingStore } from "@hackathon-qrmenu/store";
+import { useSettingStore } from "@hackathemy-qrmenu/store";
 
 export function useCurrency() {
   return useSettingStore((s) => s.currency);

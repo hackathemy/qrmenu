@@ -1,4 +1,4 @@
-import { RequestUser } from '@hackathon-qrmenu/type';
+import { RequestUser } from '@hackathemy-qrmenu/type';
 import { DeleteAccountResponseDto } from '../dtos/delete-account.dto';
 import { CommandHandler, ICommandHandler } from '@nestjs/cqrs';
 import { InjectRepository } from '@nestjs/typeorm';

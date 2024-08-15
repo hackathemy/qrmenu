@@ -1,4 +1,4 @@
-import { LangCode } from "@hackathon-qrmenu/type";
+import { LangCode } from "@hackathemy-qrmenu/type";
 import { Select } from "./select";
 import { getLangCodeLabel } from "@/utils";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";

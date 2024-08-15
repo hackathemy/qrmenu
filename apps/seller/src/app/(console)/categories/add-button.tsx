@@ -4,8 +4,8 @@ import { Input } from "@/components/input";
 import { Popup } from "@/components/popup";
 import { Radio } from "@/components/radio";
 import { Row } from "@/components/row";
-import { apiClient } from "@hackathon-qrmenu/api-client";
-import { useSellerStore } from "@hackathon-qrmenu/store";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
+import { useSellerStore } from "@hackathemy-qrmenu/store";
 import { useForm } from "react-hook-form";
 import useSWRMutation from "swr/mutation";
 

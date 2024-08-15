@@ -10,7 +10,6 @@ import { throwError } from 'src/common/error';
 import { AccountsError } from '../accounts.error';
 import { hash } from 'bcrypt';
 import { TokenService } from '../services/token.service';
-import { EmailAuthService } from '../services/email-auth.service';
 
 export class SignUpWithEmailCommand {
   constructor(public request: SignUpWithEmailRequestBodyDto) {}
@@ -24,7 +23,6 @@ export class SignUpWithEmailCommandHandler
   constructor(
     @InjectRepository(Account) private accountRepository: Repository<Account>,
     private tokenService: TokenService,
-    private emailAuthService: EmailAuthService,
   ) {}
 
   async execute(
@@ -40,10 +38,6 @@ export class SignUpWithEmailCommandHandler
       })
     ) {
       throwError(AccountsError.CONFLICT_EMAIL);
-    }
-
-    if ((await this.emailAuthService.check(request.authId)) !== request.email) {
-      throwError(AccountsError.FAILED_EMAIL_AUTH);
     }
 
     let account = this.accountRepository.create();

@@ -1,6 +1,6 @@
 "use client";
 
-import { LangCode, OptionGroup } from "@hackathon-qrmenu/type";
+import { LangCode, OptionGroup } from "@hackathemy-qrmenu/type";
 import { MenuOption } from "./menu-option";
 import { MenuOptionItem } from "./menu-option-item";
 import { useFieldArray, useFormContext } from "react-hook-form";

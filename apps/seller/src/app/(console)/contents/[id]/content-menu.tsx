@@ -9,7 +9,7 @@ import { Request } from "./page";
 import { MenuList } from "@/components/menu-list";
 import { getCDNUrl } from "@/utils";
 import { Checkbox } from "@/components/checkbox";
-import { Menu } from "@hackathon-qrmenu/type";
+import { Menu } from "@hackathemy-qrmenu/type";
 
 export const ContentMenu = ({}) => {
   const form = useFormContext<Request>();

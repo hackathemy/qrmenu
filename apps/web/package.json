@@ -1,5 +1,5 @@
 {
-  "name": "@hackathon-qrmenu/web",
+  "name": "@hackathemy-qrmenu/web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hackathon-qrmenu/api-client": "workspace:*",
-    "@hackathon-qrmenu/store": "workspace:*",
+    "@hackathemy-qrmenu/api-client": "workspace:*",
+    "@hackathemy-qrmenu/store": "workspace:*",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@toast-ui/react-editor": "^3.2.3",
     "axios": "^1.6.0",
@@ -30,9 +30,9 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
-    "@hackathon-qrmenu/eslint-config": "workspace:*",
-    "@hackathon-qrmenu/tsconfig": "workspace:*",
-    "@hackathon-qrmenu/type": "workspace:*",
+    "@hackathemy-qrmenu/eslint-config": "workspace:*",
+    "@hackathemy-qrmenu/tsconfig": "workspace:*",
+    "@hackathemy-qrmenu/type": "workspace:*",
     "@next/eslint-plugin-next": "^13.4.19",
     "@types/node": "^20",
     "@types/react": "^18",

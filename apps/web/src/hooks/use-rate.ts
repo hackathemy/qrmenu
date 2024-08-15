@@ -1,6 +1,6 @@
 import { formatNumber } from "@/utils";
-import { useCurStore } from "@hackathon-qrmenu/store";
-import { Currency } from "@hackathon-qrmenu/type";
+import { useCurStore } from "@hackathemy-qrmenu/store";
+import { Currency } from "@hackathemy-qrmenu/type";
 import { useEffect } from "react";
 
 export function useRate(currency: Currency) {

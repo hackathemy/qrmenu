@@ -5,10 +5,10 @@ import {
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Seller } from './entities/seller.entity';
-import { Repository } from 'typeorm';
+import { DataSource, Repository } from 'typeorm';
 import { GetSellerByAccountRequestParamDto } from './dtos/get-seller-by-account.dto';
 import { CreateSellerRequestBodyDto } from './dtos/create-seller.dto';
-import { AccountStatus, LangCode, RequestUser } from '@hackathon-qrmenu/type';
+import { AccountStatus, LangCode, RequestUser } from '@hackathemy-qrmenu/type';
 import { GetSellerRequestParamDto } from './dtos/get-seller.dto';
 import { Account } from 'src/accounts/entities/account.entity';
 import { File } from 'src/files/entities/file.entity';
@@ -45,6 +45,7 @@ export class SellersService {
     @InjectRepository(Seller) private sellerRepository: Repository<Seller>,
     @InjectRepository(SellerTranslate)
     private sellerTranslateRepository: Repository<SellerTranslate>,
+    private dataSource: DataSource,
   ) {}
 
   async getTranslateBySeller(
@@ -258,7 +259,6 @@ export class SellersService {
       .andWhere('Date(account.createdAt) <= :dateMax', {
         dateMax: request.dateMax,
       })
-      .andWhere('account.status = :status', { status: AccountStatus.ACTIVE })
       .groupBy('date')
       .orderBy('date', 'ASC')
       .getRawMany();
@@ -276,8 +276,6 @@ export class SellersService {
       .andWhere('Date(account.createdAt) < :dateMax', {
         dateMax: request.dateMin,
       })
-      .andWhere('account.status = :status', { status: AccountStatus.ACTIVE })
-
       .getRawOne();
 
     const inActiveData = await this.sellerRepository
@@ -293,7 +291,6 @@ export class SellersService {
       .andWhere('Date(account.createdAt) <= :dateMax', {
         dateMax: request.dateMax,
       })
-      .andWhere('account.status != :status', { status: AccountStatus.ACTIVE })
       .groupBy('date')
       .orderBy('date', 'ASC')
       .getRawMany();
@@ -311,8 +308,6 @@ export class SellersService {
       .andWhere('Date(account.createdAt) < :dateMax', {
         dateMax: request.dateMin,
       })
-      .andWhere('account.status != :status', { status: AccountStatus.ACTIVE })
-
       .getRawOne();
 
     return {
@@ -326,11 +321,17 @@ export class SellersService {
   }
 
   async createSeller(request: CreateSellerRequestBodyDto, user: RequestUser) {
-    if (
-      await this.getSellerByAccount({ accountId: user.accountId.toString() })
-    ) {
-      throw new ConflictException();
+    /** Note: repalce for testing */
+    const existSeller = await this.getSellerByAccount({
+      accountId: user.accountId.toString(),
+    });
+    if (existSeller) {
+      await this.sellerTranslateRepository.delete({
+        seller: { id: existSeller.id },
+      });
     }
+
+    await this.sellerRepository.delete({ accountId: user.accountId });
 
     let seller = this.sellerRepository.create();
 
@@ -339,6 +340,7 @@ export class SellersService {
     seller.addressDetail = request.addressDetail;
     seller.ceoName = request.ceoName;
     seller.ceoPhoneNumber = request.ceoPhoneNumber;
+
     seller.companyName = request.companyName;
     seller.companyNumber = request.companyNumber;
     seller.companyNumberImage = {
@@ -355,6 +357,10 @@ export class SellersService {
     this.createTranslate({
       sellerId: seller.id.toString(),
       langCode: LangCode.KO,
+    });
+
+    await this.dataSource.manager.update(Account, user.accountId, {
+      phoneNumber: request.ceoPhoneNumber,
     });
 
     seller = await this.getSeller({ sellerId: seller.id.toString() });

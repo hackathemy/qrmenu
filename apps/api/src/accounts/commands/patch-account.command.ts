@@ -1,4 +1,4 @@
-import { RequestUser, Role } from '@hackathon-qrmenu/type';
+import { RequestUser, Role } from '@hackathemy-qrmenu/type';
 import {
   PatchAccountRequestBodyDto,
   PatchAccountRequestParamDto,
@@ -50,21 +50,13 @@ export class PatchAccountCommandHandler
       .map((x) => x.trim())
       .filter((x) => x);
 
-    if (updateFields.includes(UpdateableField.STATUS)) {
-      if (!isAdmin) {
-        throwError(CommonError.ERR_FORBIDDEN);
-      }
-      account.status = request.account.status;
-    }
-
     account = await this.accountRepository.save(account);
 
     const accountDto = new AccountDto();
-    
+
     accountDto.createdAt = account.createdAt;
     accountDto.id = account.id;
     accountDto.email = account.email;
-    accountDto.status = account.status;
     accountDto.phoneNumber = account.phoneNumber;
 
     return { account: accountDto };

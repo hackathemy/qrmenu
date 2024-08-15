@@ -3,7 +3,7 @@
 import { useCurrency } from "@/hooks/use-currency";
 import { useRate } from "@/hooks/use-rate";
 import { formatNumber } from "@/utils";
-import { Currency, LangCode } from "@hackathon-qrmenu/type";
+import { Currency, LangCode } from "@hackathemy-qrmenu/type";
 
 export const ProductPrice = ({
   soldout,

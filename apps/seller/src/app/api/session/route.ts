@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 import dayjs from "dayjs";
-import { apiClient, setBaseUrl } from "@hackathon-qrmenu/api-client";
-import { Role, Token, TokenPayload } from "@hackathon-qrmenu/type";
+import { apiClient, setBaseUrl } from "@hackathemy-qrmenu/api-client";
+import { Role, Token, TokenPayload } from "@hackathemy-qrmenu/type";
 
 setBaseUrl(process.env.NEXT_PUBLIC_API_URL as string);
 

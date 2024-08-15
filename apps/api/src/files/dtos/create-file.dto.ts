@@ -10,6 +10,8 @@ export class CreateFileRequestBodyDto {
 
   @ApiProperty()
   contentType: string;
+
+  key:string
 }
 
 export class CreateFileResponseDto {

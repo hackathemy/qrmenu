@@ -7,7 +7,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 import { Content } from './content.entity';
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 
 @Entity()
 export class ContentTranslate {

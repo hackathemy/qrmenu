@@ -1,4 +1,4 @@
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CategoryTranslateDto {

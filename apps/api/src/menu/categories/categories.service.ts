@@ -10,7 +10,7 @@ import {
 } from './dtos/patch-category-translate.dto';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
 import { TranslateUpdateableField, UpdateableField } from './types';
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 import { DeleteCategoryRequestParamDto } from './dtos/delete-category.dto';
 import {
   PatchCategoryRequestBodyDto,

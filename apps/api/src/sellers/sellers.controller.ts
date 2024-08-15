@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Auth } from 'src/auth/decorators/auth.decorator';
-import { Role } from '@hackathon-qrmenu/type';
+import { Role } from '@hackathemy-qrmenu/type';
 import {
   ListSellersRequestQueryDto,
   ListSellersResponseDto,

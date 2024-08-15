@@ -1,57 +1,44 @@
-import { Body, Controller, HttpStatus, Param, Post } from '@nestjs/common';
+import {
+  Controller,
+  HttpStatus,
+  Post,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { Auth } from 'src/auth/decorators/auth.decorator';
-import {
-  CreateFileRequestBodyDto,
-  CreateFileResponseDto,
-} from './dtos/create-file.dto';
-import {
-  GenerateSignedUrlRequestBodyDto,
-  GenerateSignedUrlRequestParamDto,
-  GenerateSignedUrlResponseDto,
-} from './dtos/generate-signed-url.dto';
-import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { CreateFileCommand, GenerateSignedUrlCommand } from './commands';
+import { CreateFileResponseDto } from './dtos/create-file.dto';
+import { CommandBus } from '@nestjs/cqrs';
 import { RequestUser } from 'src/auth/decorators/request-user.decorator';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { CreateFileCommand } from './commands/create-file.command';
 
 @Controller()
 @ApiTags('File API')
 export class FilesController {
-  constructor(private queryBus: QueryBus, private commandBus: CommandBus) {}
-
-  @Post('/files/:fileId[:]generateSignedUrl')
-  @Auth()
-  @ApiOperation({
-    summary: 'Generate Signed URL ',
-    description: `[Cases] <br/>
-    - Put: Create한 파일에 Object Upload 가능한 URL <br/>
-    - Get: 파일에 권한이 있다면 Download 가능한 URL `,
-  })
-  @ApiResponse({ status: HttpStatus.OK, type: GenerateSignedUrlResponseDto })
-  generateSignedUrl(
-    @Body() body: GenerateSignedUrlRequestBodyDto,
-    @Param() param: GenerateSignedUrlRequestParamDto,
-    @RequestUser() requestUser,
-  ) {
-    return this.commandBus.execute(
-      new GenerateSignedUrlCommand({ ...body, ...param }, requestUser),
-    );
-  }
+  constructor(private commandBus: CommandBus) {}
 
   @Post('/files')
   @Auth()
+  @UseInterceptors(FileInterceptor('file'))
   @ApiOperation({
-    summary: 'Create File ',
-    description: `[Note] <br/>
-    * 해당 API로 파일 생성 후 generateSignedUrl Method를 호출하여 파일을 직접 PUT`,
+    summary: 'Upload File',
   })
   @ApiResponse({ status: HttpStatus.CREATED, type: CreateFileResponseDto })
   createFile(
-    @Body() body: CreateFileRequestBodyDto,
     @RequestUser() requestUser,
+    @UploadedFile() file: Express.Multer.File,
   ) {
     return this.commandBus.execute(
-      new CreateFileCommand({ ...body }, requestUser),
+      new CreateFileCommand(
+        {
+          size: file.size,
+          contentType: file.mimetype,
+          fileName: file.originalname,
+          key: file.path,
+        },
+        requestUser,
+      ),
     );
   }
 }

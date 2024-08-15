@@ -11,12 +11,12 @@ import { ContentMultipleSelecor } from "@/components/content-multiple-selector";
 import { Description } from "./description";
 import { Buttons } from "@/components/buttons";
 import { FormProvider, useForm } from "react-hook-form";
-import { Menu, MenuAllergy, MenuBadge, MenuFoodStyle } from "@hackathon-qrmenu/type";
+import { Menu, MenuAllergy, MenuBadge, MenuFoodStyle } from "@hackathemy-qrmenu/type";
 import { Editor } from "@toast-ui/react-editor";
 import { Ingradient } from "./ingradient";
 import useSWRMutation from "swr/mutation";
-import { apiClient } from "@hackathon-qrmenu/api-client";
-import { useLangPopupStore, useSellerStore } from "@hackathon-qrmenu/store";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
+import { useLangPopupStore, useSellerStore } from "@hackathemy-qrmenu/store";
 import { useLang } from "@/hooks/use-lang";
 import uswSWR from "swr";
 import {

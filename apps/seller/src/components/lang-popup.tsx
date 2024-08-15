@@ -1,10 +1,10 @@
 "use client";
 
-import { useLangPopupStore } from "@hackathon-qrmenu/store";
+import { useLangPopupStore } from "@hackathemy-qrmenu/store";
 import { PopupContainer } from "./popup";
 import { Button } from "./button";
 import { useLang } from "@/hooks/use-lang";
-import { LangCode } from "@hackathon-qrmenu/type";
+import { LangCode } from "@hackathemy-qrmenu/type";
 import { InputLabel } from "./input-label";
 import { useEffect, useState } from "react";
 
@@ -56,7 +56,7 @@ export const LangPopup = ({}) => {
         <PopupContainer onCancel={hide} className="!min-w-[600px] w-[600px]">
           <div className="grid grid-flow-row gap-y-5">
             <InputLabel labelBold label="입력을 완료하셨나요?" />
-            {langCode === LangCode.KO ? (
+            {/**   {langCode === LangCode.KO ? (
               <>
                 <p>
                   완료되었다면 저장과 동시에 다른 언어로 자동으로 번역되어
@@ -126,7 +126,22 @@ export const LangPopup = ({}) => {
               >
                 {loading === "2" ? "저장중입니다..." : "저장 하기"}
               </Button>
-            )}
+            )} */}
+
+            <Button
+              disabled={loading !== null}
+              onClick={() => {
+                if (callback) {
+                  setLoading("2");
+                  callback(false, () => {
+                    setLoading(null);
+                    hide();
+                  });
+                }
+              }}
+            >
+              {loading === "2" ? "저장중입니다..." : "저장 하기"}
+            </Button>
           </div>
         </PopupContainer>
       )}

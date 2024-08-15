@@ -25,7 +25,7 @@ import { ContentMenu } from './entities/content-menu';
 import { ContentTranslate } from './entities/content-translate.entity';
 import { Seller } from 'src/sellers/entities/seller.entity';
 import { File } from 'src/files/entities/file.entity';
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 import {
   ListMenusRequestParamDto,
   ListMenusRequestQueryDto,

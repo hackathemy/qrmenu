@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  transpilePackages: ["@hackathon-qrmenu/type","@hackathon-qrmenu/api-client","@hackathon-qrmenu/store"],
+  transpilePackages: ["@hackathemy-qrmenu/type","@hackathemy-qrmenu/api-client","@hackathemy-qrmenu/store"],
 
 
   images: {

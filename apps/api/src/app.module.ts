@@ -15,6 +15,10 @@ import { SellersModule } from './sellers/sellers.module';
 import { CategoriesModule } from './menu/categories/categories.module';
 import { MenusModule } from './menu/menus/menus.module';
 import { ContentsModule } from './contents/contents.module';
+import multer, { diskStorage } from 'multer';
+import { existsSync, mkdirSync } from 'fs';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -32,6 +36,7 @@ import { ContentsModule } from './contents/contents.module';
         };
       },
     }),
+  
     TypeOrmModule.forRootAsync({
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => {

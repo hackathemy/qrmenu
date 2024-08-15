@@ -2,7 +2,7 @@ import {
   PaymentCardType,
   PaymentCashType,
   PaymentSmartPayType,
-} from "@hackathon-qrmenu/type";
+} from "@hackathemy-qrmenu/type";
 import Image from "next/image";
 
 export const PayItem = ({

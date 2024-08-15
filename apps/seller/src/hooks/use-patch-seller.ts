@@ -1,6 +1,6 @@
-import { ApiError, apiClient } from "@hackathon-qrmenu/api-client";
-import { useSellerStore } from "@hackathon-qrmenu/store";
-import { Seller } from "@hackathon-qrmenu/type";
+import { ApiError, apiClient } from "@hackathemy-qrmenu/api-client";
+import { useSellerStore } from "@hackathemy-qrmenu/store";
+import { Seller } from "@hackathemy-qrmenu/type";
 import { useCallback } from "react";
 
 export function usePatchSeller() {

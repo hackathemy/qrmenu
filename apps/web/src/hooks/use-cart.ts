@@ -1,5 +1,5 @@
-import { useCartStore } from "@hackathon-qrmenu/store";
-import { Menu, OptionGroup } from "@hackathon-qrmenu/type";
+import { useCartStore } from "@hackathemy-qrmenu/store";
+import { Menu, OptionGroup } from "@hackathemy-qrmenu/type";
 
 export function useCart() {
   const { items, setItems } = useCartStore();

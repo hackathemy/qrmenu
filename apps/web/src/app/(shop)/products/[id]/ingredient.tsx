@@ -1,5 +1,5 @@
 import { BadgeAllegry } from "@/components/badge";
-import { Menu } from "@hackathon-qrmenu/type";
+import { Menu } from "@hackathemy-qrmenu/type";
 import { useTranslation } from "react-i18next";
 
 export const Ingredient = ({ menu }: { menu: Menu }) => {

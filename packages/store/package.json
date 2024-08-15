@@ -1,5 +1,5 @@
 {
-  "name": "@hackathon-qrmenu/store",
+  "name": "@hackathemy-qrmenu/store",
   "version": "0.0.0",
   "main": "./src/index.ts",
   "clean": "rm -rf node_modules && rm -rf dis  && rm -rf .turbo",
@@ -10,8 +10,8 @@
     "@types/node": "^20.5.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
-    "@hackathon-qrmenu/tsconfig": "workspace:*",
-    "@hackathon-qrmenu/type": "workspace:*",
+    "@hackathemy-qrmenu/tsconfig": "workspace:*",
+    "@hackathemy-qrmenu/type": "workspace:*",
     "typescript": "^4.5.2"
   },
   "dependencies": {

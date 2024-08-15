@@ -1,5 +1,5 @@
 {
-  "extends": "@hackathon-qrmenu/tsconfig/nextjs.json",
+  "extends": "@hackathemy-qrmenu/tsconfig/nextjs.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "paths": {

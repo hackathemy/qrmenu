@@ -1,7 +1,7 @@
 import { useDefaultQueryParams } from "@/utils";
-import { apiClient } from "@hackathon-qrmenu/api-client";
-import { useSellerStore } from "@hackathon-qrmenu/store";
-import { LangCode } from "@hackathon-qrmenu/type";
+import { apiClient } from "@hackathemy-qrmenu/api-client";
+import { useSellerStore } from "@hackathemy-qrmenu/store";
+import { LangCode } from "@hackathemy-qrmenu/type";
 import { useSearchParams } from "next/navigation";
 import uswSWR, { useSWRConfig } from "swr";
 

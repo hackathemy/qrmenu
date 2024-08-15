@@ -4,7 +4,7 @@ import {
   MenuBadge,
   MenuFoodStyle,
   MenuUnit,
-} from '@hackathon-qrmenu/type';
+} from '@hackathemy-qrmenu/type';
 import { ApiProperty } from '@nestjs/swagger';
 import { Category } from 'src/menu/categories/entities/category.entity';
 import { Menu } from '../entities/menu.entity';

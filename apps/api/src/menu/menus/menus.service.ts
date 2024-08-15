@@ -39,7 +39,7 @@ import { MenuTranslate } from './entities/menu-translate.entity';
 import { Seller } from 'src/sellers/entities/seller.entity';
 import { TranslateUpdateableField, UpdateableField } from './types';
 import { QueryDeepPartialEntity } from 'typeorm/query-builder/QueryPartialEntity';
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 import { Category } from '../categories/entities/category.entity';
 import { File } from 'src/files/entities/file.entity';
 

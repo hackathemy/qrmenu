@@ -1,4 +1,4 @@
-import { RequestUser, Role } from '@hackathon-qrmenu/type';
+import { RequestUser, Role } from '@hackathemy-qrmenu/type';
 import {
   DeleteAccountReqeustBodyDto,
   DeleteAccountRequestParamDto,
@@ -10,7 +10,6 @@ import { Account } from '../entities/account.entity';
 import { Repository } from 'typeorm';
 import { CommonError, throwError } from 'src/common/error';
 import { UnprocessableEntityException } from '@nestjs/common';
-import { PhoneAuthService } from '../services/phone-auth.service';
 import { compare } from 'bcrypt';
 import { SellersService } from 'src/sellers/sellers.service';
 import { AccountsError } from '../accounts.error';
@@ -29,7 +28,6 @@ export class DeleteAccountCommandHandler
 {
   constructor(
     @InjectRepository(Account) private accountRepository: Repository<Account>,
-    private phoneAuthService: PhoneAuthService,
     private sellersService: SellersService,
   ) {}
 
@@ -73,8 +71,6 @@ export class DeleteAccountCommandHandler
       if (!(await compare(request.password, account.password))) {
         throw throwError(AccountsError.INVLIAD_PASSWORD);
       }
-
-      await this.phoneAuthService.check(request.authId);
     }
 
     await this.accountRepository.update(

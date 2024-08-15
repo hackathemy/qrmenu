@@ -1,7 +1,7 @@
 "use client";
 
 import { getCDNUrl } from "@/utils";
-import { MenuImage } from "@hackathon-qrmenu/type";
+import { MenuImage } from "@hackathemy-qrmenu/type";
 import Image from "next/image";
 import { useState } from "react";
 import { Swiper, SwiperSlide, SwiperClass } from "swiper/react";

@@ -5,7 +5,7 @@ import {
 } from 'src/common/internal/decorators/api-property.decorator';
 import { CategoryDto } from './category.dto';
 import { Category } from '../entities/category.entity';
-import { LangCode } from '@hackathon-qrmenu/type';
+import { LangCode } from '@hackathemy-qrmenu/type';
 
 export class PatchCategoryRequestParamDto {
   @ApiProperty()

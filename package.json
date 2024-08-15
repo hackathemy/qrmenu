@@ -1,17 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
+    "dev:web": "pnpm --parallel --filter @hackathemy-qrmenu/web... run dev",
+    "dev:seller": "pnpm --parallel --filter @hackathemy-qrmenu/seller... run dev",
+    "dev:api": "pnpm --parallel --filter @hackathemy-qrmenu/api... run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint": "^8.48.0",
     "prettier": "^3.0.3",
-    "@hackathon-qrmenu/tsconfig": "workspace:*",
-    "turbo": "latest"
+    "@hackathemy-qrmenu/tsconfig": "workspace:*"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "hackathon-qrmenu"
+  "name": "hackathemy-qrmenu"
 }

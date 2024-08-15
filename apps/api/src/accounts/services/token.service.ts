@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Account } from '../entities/account.entity';
 import { TokenDto } from 'src/auth/dtos/token.dto';
 import { JwtService } from '@nestjs/jwt';
-import { TokenPayload } from '@hackathon-qrmenu/type';
+import { TokenPayload } from '@hackathemy-qrmenu/type';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 

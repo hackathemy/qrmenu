@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { Account } from "@hackathon-qrmenu/type";
+import { Account } from "@hackathemy-qrmenu/type";
 
 interface AccountStore {
   account: null | Account;

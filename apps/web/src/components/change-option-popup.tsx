@@ -7,7 +7,7 @@ import { ProductPrice } from "./product-price";
 import { ProductOptions } from "./product-options";
 import { useTranslation } from "react-i18next";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
-import { CartItem as CartItemT } from "@hackathon-qrmenu/store";
+import { CartItem as CartItemT } from "@hackathemy-qrmenu/store";
 import { useMemo } from "react";
 import { CartProductOptions } from "./cart-product-options";
 import { getCDNUrl } from "@/utils";

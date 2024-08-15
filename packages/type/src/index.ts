@@ -144,7 +144,6 @@ export interface Seller {
 export interface JoinAccount {
   email: string;
   id: number;
-  status: AccountStatus;
   phoneNumber: string;
   createdAt: Date;
 }
